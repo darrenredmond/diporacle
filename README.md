@@ -77,3 +77,49 @@ DEFINE p_deptno=280
 
 d. Confirm that the department has been deleted.
 
+Practice 5
+----------
+1. Execute the command in the file lab04_1.sql to create the MESSAGES table.
+Write a PL/SQL block to insert numbers into the MESSAGES table.
+a. Insert the numbers 1 to 10, excluding 6 and 8.
+b. Commit before the end of the block.
+c. Select from the MESSAGES table to verify that your PL/SQL block worked.
+
+2. Create a PL/SQL block that computes the commission amount for a given employee based
+on the employee’s salary.
+a. Use the DEFINE command to provide the employeeID.
+Pass the value to the PL/SQL block through a iSQL*Plus substitution variable.
+DEFINE p_empno = 100
+
+b. If the employee’s salary is less than $5,000, display the bonus amount for the employee as 10% of the salary.
+c. If the employee’s salary is between $5,000 and $10,000, display the bonus amount for the employee as 15% of the salary.
+d. If the employee’s salary exceeds $10,000, display the bonus amount for the employee as 20% of the salary.
+e. If the employee’s salary is NULL, display the bonus amount for the employee as 0.
+f. Test the PL/SQL block for each case using the following test cases, and check each bonus amount.
+Employee Number Salary ResultingBonus
+1002 4000 4800
+1491 0500 2100
+178 700010 50
+Note:IncludeSET VERIFY OFFinyoursolution.
+Practice5(continued)
+Ifyouhavetime,completethefollowingexercises:
+3. Createan EMPtablethatisa replicaoftheEMPLOYEEStable.Youcandothisbyexecutingthe
+scriptlab4_3.sql. Adda new column,
+STARS,ofVARCHAR2datatypeandlengthof50tothe EMPtableforstoringasterisk (*).
+4. CreateaPL/SQLblockthatrewardsanemployeeby appendinganasteriskinthe STARS
+column forevery$1000oftheemployee’ssalary. SaveyourPL/SQLblockina filecalled p4q4.sql
+byclickingontheSaveScriptbutton.Remembertosavethescriptwitha.sqlextension.
+a.Usethe DEFINEcommandtoprovidetheemployeeID.PassthevaluetothePL/SQLblock
+through aiSQL*Plussubstitution variable.
+b.Initializeav_asteriskvariable thatcontainsaNULL.
+c.Appendanasterisktothe stringforevery$1000ofthesalaryamount.Forexample,iftheemployee
+hasasalaryamountof$8000,the stringofasterisksshouldcontaineightasterisks.Iftheemployee
+hasasalaryamountof$12500,the stringofasterisksshouldcontain13asterisks.
+d.UpdatetheSTARScolumnfortheemployeewiththestringofasteris
+ks. e.Commit.
+f.Testthe blockforthefollowing values:
+DEFINE p_empno=104
+DEFINE p_empno=174
+DEFINE p_empno=176
+g.DisplaytherowsfromtheEMPtableto verifywhetheryourPL/SQL
+blockhasexecuted successfully.
