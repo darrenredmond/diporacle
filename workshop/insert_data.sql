@@ -27,7 +27,6 @@ luck and a lot ingenuity, a teenager skips school for
 a day in New York.', 'PG', 'COMEDY',
 TO_DATE( '12-JUL-1995','DD-MON-YYYY'));
 
-
 INSERT INTO title(title_id, title, description, rating,
 category, release_date)
 VALUES (title_id_seq.NEXTVAL, 'Miracles on Ice',
@@ -40,12 +39,39 @@ VALUES (title_id_seq.NEXTVAL, 'Soda Gang',
 'After discovering a cache of drugs, a young couple find themselves pitted against a vicious gang.',
 'NR', 'ACTION', '01-JUN-1995');
 
+INSERT INTO member(member_id, first_name, last_name, address, city, phone, join_date)
+VALUES (member_id_seq.NEXTVAL, 
+'Carmen', 'Velasquez', '283 King Street', 'Seattle', '206-899-6666', TO_DATE('08-MAR-1990', 'DD-MM-YYYY'));
+
+INSERT INTO member(member_id, first_name, last_name, address, city, phone, join_date)
+VALUES (member_id_seq.NEXTVAL, 
+'LaDoris', 'Ngao', '5 Modrany', 'Bratislava', '586-355-8882', TO_DATE('08-MAR-1990', 'DD-MM-YYYY'));
+
+INSERT INTO member(member_id, first_name, last_name, address, city, phone, join_date)
+VALUES (member_id_seq.NEXTVAL, 
+'Midori', 'Nagayama', '68 Via Centrale', 'Sao Paolo', '254-852-5764', TO_DATE('17-JUN-1991', 'DD-MM-YYYY'));
+
+INSERT INTO member(member_id, first_name, last_name, address, city, phone, join_date)
+VALUES (member_id_seq.NEXTVAL, 
+'Mark', 'Quick-toSee', '6921 King Way', 'Lagos', '63-559-7777', TO_DATE('07-APR-1990', 'DD-MM-YYYY'));
+
+INSERT INTO member(member_id, first_name, last_name, address, city, phone, join_date)
+VALUES (member_id_seq.NEXTVAL, 
+'Audry', 'Ropeburn', '86 Chu Street', 'Hong Kong', '41-559-87', TO_DATE('18-JAN-1991', 'DD-MM-YYYY'));
+
+INSERT INTO member(member_id, first_name, last_name, address, city, phone, join_date)
+VALUES (member_id_seq.NEXTVAL, 
+'Molly', 'Urguhart', '3035 Laurier', 'Quebec', '418-542-9988', TO_DATE('18-JAN-1991', 'DD-MM-YYYY'));
+
 INSERT INTO title_copy(copy_id, title_id, status) VALUES (1, 92, 'AVAILABLE');
 INSERT INTO title_copy(copy_id, title_id, status) VALUES (1, 93, 'AVAILABLE');
 INSERT INTO title_copy(copy_id, title_id, status) VALUES (2, 93, 'RENTED');
 INSERT INTO title_copy(copy_id, title_id, status) VALUES (1, 94, 'AVAILABLE');
 INSERT INTO title_copy(copy_id, title_id, status) VALUES (1, 95, 'AVAILABLE');
-INSERT INTO title_copy(copy_id, title_id,status) VALUES (2, 95, 'AVAILABLE');
-INSERT INTO title_copy(copy_id, title_id,status) VALUES (3, 95, 'RENTED');
-INSERT INTO title_copy(copy_id, title_id,status) VALUES (1, 96, 'AVAILABLE');
-INSERT INTO title_copy(copy_id, title_id,status) VALUES (1, 97, 'AVAILABLE');
+INSERT INTO title_copy(copy_id, title_id, status) VALUES (2, 95, 'AVAILABLE');
+INSERT INTO title_copy(copy_id, title_id, status) VALUES (3, 95, 'RENTED');
+INSERT INTO title_copy(copy_id, title_id, status) VALUES (1, 96, 'AVAILABLE');
+INSERT INTO title_copy(copy_id, title_id, status) VALUES (1, 97, 'AVAILABLE');
+
+
+
